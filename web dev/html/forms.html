@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <h1>Forms first</h1>
+    <form action="url" method="GET" accept-charset="UTF-16" autocomplete="off" autocapitalize="on"
+        enctype="multipart/form-data">
+        <!-- autocomplete for bank info -->
+        <!-- everything inside form submitted at alltoogether -->
+        <!-- action means where i have to submit this form -->
+        <!-- method: post  data will submit in encrypted form -->
+        <!-- method: get data visible in url-->
+        <label for="fname">First Name</label><br>
+        <!-- for is for which input tag ure referring -->
+        <input type="text" placeholder="Hello" name="" id="fname"><br>
+        <!-- best practice to always put input tag after label tag for better reading -->
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" placeholder="LastName">
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+
+</html>
+<!--  it tells the browser how to encode the form data when it's submitted to the server. and only work when method is post -->
+<!-- application/x-www-form-urlencoded	🔸 Default value — form data is encoded in key=value pairs (used in text inputs)
+multipart/form-data	✅ Used when your form includes file uploads (<input type="file">)
+text/plain	Form data is sent as plain text (rarely used, not URL encoded) -->
